@@ -1,0 +1,40 @@
+/* Global */
+:root {
+  --bn-orange: #ff6a00;
+}
+.text-orange {
+  color: var(--bn-orange);
+}
+.border-orange {
+  border-bottom: solid 2px var(--bn-orange);
+}
+.bg-orange {
+  background-color: var(--bn-orange);
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Menu bar */
+.nav-container {
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(0.85, 0.85, 0.85, 0.85),
+      rgba(0.85, 0.85, 0.85, 0.85)
+    ),
+    url(../images/home-bg.jpg);
+  height: 400px;
+  background-size: cover;
+}
+.flag {
+  width: 25px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+/* Body */
+.search-img :hover {
+  color: var(--bn-orange);
+}
