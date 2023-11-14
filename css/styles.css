@@ -2,6 +2,9 @@
 :root {
   --bn-orange: #ff6a00;
 }
+.hover-underline:hover {
+  text-decoration: underline;
+}
 .text-orange {
   color: var(--bn-orange);
 }
@@ -11,10 +14,11 @@
 .bg-orange {
   background-color: var(--bn-orange);
 }
-
+.link-app img{
+  width: 100px;
+}
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:sans-serif;
 }
 
 /* Menu bar */
