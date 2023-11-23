@@ -79,3 +79,13 @@ body {
 }
 
 /* --------------------- */
+
+/* New arrival */
+.card-new .card-spot{
+  background-color: rgb(236, 236, 236);
+}
+
+.vmore{
+  font-size: 25px;
+}
+
