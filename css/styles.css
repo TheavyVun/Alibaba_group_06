@@ -175,3 +175,68 @@ body {
   margin-right: 0;
 }
 /* -------------------------------------- */
+
+        /* Container for horizontal scroll */
+        .scroll-container {
+          width: 100%;
+          overflow-x: auto;
+          white-space: nowrap;
+          }
+  
+          /* Content inside the scroll container */
+          .scroll-content {
+          display: inline-block;
+          }
+  
+          /* Individual items */
+          .item {
+          display: inline-block;
+          /* width: 200px;
+          height: 200px; */
+          /* border: 1px solid #ccc; */
+          margin: 5px 50px;
+          text-align: center;
+          line-height: 50px;
+          }
+          #prevButton, #nextButton {
+              position: absolute;
+              top: 30%;
+              bottom: 30%;
+          }
+          #nextButton {
+              position: absolute;
+              top: 30%;
+              bottom: 30%;
+              /* top: 55vh; */
+              right: 0;
+          }
+  /* For WebKit (Chrome, Safari, etc.) */
+  ::-webkit-scrollbar {
+    width: 2px; /* Adjust the width */
+    height: 2px; /* Adjust the height */
+  }
+  
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff0000;
+  }
+  
+  /* For Firefox */
+  /* Width and color */
+  .scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+  
+  .card-supplier {
+    position: relative;
+  }
+.country-item-image {
+  background: #ececec;
+}
