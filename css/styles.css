@@ -178,9 +178,10 @@ body {
 
         /* Container for horizontal scroll */
         .scroll-container {
-          width: 100%;
+          width: 94%;
           overflow-x: auto;
           white-space: nowrap;
+          align-self: center;
           }
   
           /* Content inside the scroll container */
@@ -196,27 +197,44 @@ body {
           /* border: 1px solid #ccc; */
           margin: 5px 50px;
           text-align: center;
-          line-height: 50px;
+          /* line-height: 50px; */
           }
-          #prevButton, #nextButton {
+          .preBtn, .nextBtn {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              /* background: #fff;
+              filter: blur(1px); */
+              display: flex;
+              align-items: center;
+          }
+          .preBtn {
+            left: 0;
+          }
+          .nextBtn {
+            right: 0;
+          }
+          /* #prevButton, #nextButton {
               position: absolute;
               top: 30%;
               bottom: 30%;
-          }
-          #nextButton {
+          } */
+          /* #nextButton {
               position: absolute;
               top: 30%;
               bottom: 30%;
-              /* top: 55vh; */
+              top: 55vh;
               right: 0;
-          }
+          } */
   /* For WebKit (Chrome, Safari, etc.) */
   ::-webkit-scrollbar {
     width: 2px; /* Adjust the width */
     height: 2px; /* Adjust the height */
   }
   
-  
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
   
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -236,6 +254,9 @@ body {
   
   .card-supplier {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 .country-item-image {
   background: #ececec;
