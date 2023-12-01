@@ -79,7 +79,7 @@
           <ul class="list-group main-categories-content"></ul>
         </div>
         <div class="p-0 col-3 h-100 overflow-auto">
-          <ul class="list-group sub-cagetgories-content"></ul>
+          <ul class="list-group sub-categories-content"></ul>
         </div>
         <div class="p-0 col-6 h-100 overflow-auto pt-2">
           <div id="product-name-container" class="row m-0 row-cols-5"></div>
@@ -437,24 +437,119 @@
       },
       {
         categoryName: "Industrial",
+        subCategories: [
+          {
+            name: "Gifts & Crafts",
+            goods: [],
+          },
+          {
+            name: "Construction & Real Estate",
+            goods: [],
+          },
+          {
+            name: "Lights & Lighting",
+            goods: [],
+          },
+          {
+            name: "Furniture",
+            goods: [],
+          },
+          {
+            name: "Pet Supplies",
+            goods: [],
+          },
+        ],
       },
       {
         categoryName: "Health & Personal Care",
+        subCategories: [
+          {
+            name: "Food & Beverage",
+            goods: [],
+          },
+          {
+            name: "Medical devices & Supplies",
+            goods: [],
+          },
+          {
+            name: "Sports & Entertainment",
+            goods: [],
+          },
+          {
+            name: "Packaging & Printing",
+            goods: [],
+          },
+          {
+            name: "Personal Care & Household Cleaning",
+            goods: [],
+          },
+          {
+            name: "Mother, Kids & Toys",
+            goods: [],
+          },
+          {
+            name: "Health Care",
+            goods: [],
+          },
+        ],
       },
       {
         categoryName: "Fashion & Beauty",
+        subCategories: [
+          { name: "Shoes & Accessories", goods: [] },
+          { name: "Apparel & Accessories", goods: [] },
+          { name: "Luggage, Bags & Cases", goods: [] },
+          { name: "Jewelry, Eyewear, Watches & Accessories", goods: [] },
+          { name: "Packaging & Printing", goods: [] },
+          { name: "Beauty", goods: [] },
+        ],
       },
       {
         categoryName: "Sports & Entertainment",
+        subCategories: [
+          { name: "Consumer Electronics", goods: [] },
+          { name: "Home Appliances", goods: [] },
+          { name: "Sports & Entertainment", goods: [] },
+        ],
       },
       {
         categoryName: "Tools & Home Improvement",
+        subCategories: [
+          { name: "Tools & Hardware", goods: [] },
+          { name: "Lights & Lighting", goods: [] },
+          { name: "Renewable Energy", goods: [] },
+          { name: "Electrical Equipment & Supplies", goods: [] },
+          { name: "Safety", goods: [] },
+          { name: "Security", goods: [] },
+          { name: "Consumer Electronics", goods: [] },
+        ],
       },
       {
         categoryName: "Raw Materials",
+        subCategories: [
+          { name: "Chemicals", goods: [] },
+          { name: "Metals & Alloys", goods: [] },
+          { name: "Rubber & Plastics", goods: [] },
+          { name: "Fabric & Textile Raw Material", goods: [] },
+          { name: "Agriculture", goods: [] },
+          { name: "Business Services", goods: [] },
+        ],
       },
       {
         categoryName: "Maintenance, Repair & Operations",
+        subCategories: [
+          { name: "Tools & Hardware", goods: [] },
+          { name: "Testing Instrument & Equipment", goods: [] },
+          { name: "Power Transmission", goods: [] },
+          { name: "Material Handling", goods: [] },
+          { name: "Safety", goods: [] },
+          { name: "Security", goods: [] },
+          { name: "School & Office Supplies", goods: [] },
+          { name: "Electrical Equipment & Supplies", goods: [] },
+          { name: "Packaging & Printing", goods: [] },
+          { name: "Renewable Energy", goods: [] },
+          { name: "Environment", goods: [] },
+        ],
       },
     ];
 
@@ -462,31 +557,36 @@
     const mainCategoryContent = document.querySelector(
       ".main-categories-content"
     );
-    for (let product of products) {
+    products.forEach((product, index) => {
       const li = document.createElement("li");
       li.classList = "list-group-item list-group-border-none";
       li.textContent = product.categoryName;
       mainCategoryContent.appendChild(li);
-    }
+    });
 
-    // Secound col: Display sub categories
+    // Second col: Display sub categories
     const subCategoriesContent = document.querySelector(
-      ".sub-cagetgories-content"
+      ".sub-categories-content"
     );
-    addSubCagetories(subCategoriesContent, products[0].subCategories);
-    function addSubCagetories(parentEle, datas) {
-      for (let data of datas) {
+    addSubCategories(subCategoriesContent, products[1].subCategories);
+    function addSubCategories(parentEle, datas) {
+      parentEle.innerHTML = "";
+      for (let i = 0; i < datas.length; i++) {
+        const data = datas[i];
         const li = document.createElement("li");
         li.classList = "list-group-item list-group-border-none";
         li.textContent = data.name;
-        subCategoriesContent.appendChild(li);
+        parentEle.appendChild(li);
+        li.addEventListener("mouseover", () => {
+          addSubCategories(subCategoriesContent, data);
+        });
       }
     }
 
     // Third cold: Display image
     const productContainer = document.getElementById("product-name-container");
     function createProduct(datas) {
-      console.log(datas);
+      productContainer.innerHTML = "";
       for (const product of datas) {
         const productItem = document.createElement("div");
         productItem.classList = "col text-center";
