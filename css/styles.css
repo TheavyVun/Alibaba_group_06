@@ -183,6 +183,13 @@ body {
   white-space: nowrap;
   align-self: center;
 }
+.scroll-container-business {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  align-self: center;
+  padding-bottom: 20px;
+}
 /* Content inside the scroll container */
 .scroll-content {
   display: inline-block;
@@ -194,7 +201,9 @@ body {
   text-align: center;
 }
 .preBtn,
-.nextBtn {
+.nextBtn,
+.pre-business-btn,
+.next-business-btn {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -219,7 +228,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #a1a1a1;
 }
 
 /* Handle */
@@ -245,4 +254,20 @@ body {
 }
 .bimg {
   margin: 7px 0;
+}
+
+.radius-16 {
+  border-radius: 16px;
+}
+
+.item-re-business {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.pre-business-btn {
+  left: -20px;
+}
+.next-business-btn {
+  right: -20px;
 }
