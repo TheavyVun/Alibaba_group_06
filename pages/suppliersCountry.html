@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alibaba.com</title>
+    <link rel="stylesheet" href="../css/suppliersCountry.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
+</head>
+
+<body>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="home-country-item">
+                    <div class="country-item-image"><img class="bimg "
+                            src="//s.alicdn.com/@img/tfs/TB1aUq6cgoQMeJjy0FoXXcShVXa-48-48.png"></div>
+                    <div class="country-item-text home-util-ellipsis line2">Japan</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="home-country-item">
+                    <div class="country-item-image"><img class="bimg "
+                            src="//s.alicdn.com/@img/tfs/TB18omIbIrI8KJjy0FhXXbfnpXa-48-48.png"></div>
+                    <div class="country-item-text home-util-ellipsis line2">USA</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="home-country-item">
+                    <div class="country-item-image"><img class="bimg "
+                            src="//s.alicdn.com/@img/tps/TB1QwGEPFXXXXXUaXXXXXXXXXXX-48-48.png"></div>
+                    <div class="country-item-text home-util-ellipsis line2">Turkey</div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="home-country-item">
+                    <div class="country-item-image"><img class="bimg "
+                            src="//s.alicdn.com/@img/tps/TB1tQC4PFXXXXaOXpXXXXXXXXXX-48-48.png"></div>
+                    <div class="country-item-text home-util-ellipsis line2">Malaysia</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="home-country-item" data-spm-anchor-id="a2700.product_home_l0.5.i0.573c67af89Qjix">
+                    <div class="country-item-image"><img class="bimg "
+                            src="//s.alicdn.com/@img/tps/TB1WVfXPFXXXXXvXpXXXXXXXXXX-48-48.png"></div>
+                    <div class="country-item-text home-util-ellipsis line2">South Korea</div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="home-country-item">
+                    <div class="country-item-image"><img class="bimg "
+                            src="//s.alicdn.com/@img/tps/TB1fky3PFXXXXcuXpXXXXXXXXXX-48-48.png"></div>
+                    <div class="country-item-text home-util-ellipsis line2">Vietnam</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="home-country-item">
+                    <div class="country-item-image"><img class="bimg "
+                            src="//s.alicdn.com/@img/imgextra/i3/O1CN01Sbi1Tm28po6huT3zL_!!6000000007982-2-tps-48-48.png">
+                    </div>
+                    <div class="country-item-text home-util-ellipsis line2">Russia</div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="home-country-item">
+                    <div class="country-item-image"><img class="bimg "
+                            src="//s.alicdn.com/@img/tps/TB1xQi8PFXXXXaRXpXXXXXXXXXX-48-48.png"></div>
+                    <div class="country-item-text home-util-ellipsis line2">Thailand</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+</body>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 7,
+                spaceBetween: 60
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            },
+            1280: {
+                slidesPerView: 7,
+                spaceBetween: 60
+            }
+        }
+    });
+</script>
+
+</html>
