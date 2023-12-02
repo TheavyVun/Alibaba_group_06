@@ -17,6 +17,29 @@
 .link-app img {
   width: 100px;
 }
+.list-group-border-none {
+  border: none;
+  cursor: pointer;
+}
+.scrollbar-y {
+  overflow-y: scroll;
+}
+.bg-white {
+  background-color: #fff;
+}
+.list-group-border-none:hover {
+  background-color: #f0f0f0;
+}
+.hover-border-b {
+  transition: border-width 0.2s linear;
+}
+.hover-border-b:hover {
+  border-bottom: solid 2px #fff;
+}
+.img-item {
+  width: 60px;
+  height: 60px;
+}
 body {
   font-family: sans-serif;
   font-size: 14px;
