@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <div class="nav-container pt-4 text-light">
+    <div class="nav-container text-light">
       <nav
         class="navigation d-flex justify-content-between align-items-center container-fluid px-5"
       >
@@ -63,7 +63,7 @@
       </nav>
       <div class="d-flex justify-content-between container-fluid px-5 mt-3">
         <div class="d-flex">
-          <div class="d-flex" role="button">
+          <div class="d-flex hover-element hover-border-b pb-1" role="button">
             <span class="material-symbols-outlined"> list </span>
             <span class="ms-1">All categories</span>
           </div>
@@ -77,15 +77,30 @@
           <span role="button" class="ms-4">Get the app</span>
         </div>
       </div>
+      <div
+        style="height: 400px"
+        class="container-fluid px-5 mx-0 custom-z-index row bg-white d-none show-when-hover py-2"
+      >
+        <div class="p-0 col-3 h-100 scrollbar-y">
+          <ul class="list-group main-categories-content"></ul>
+        </div>
+        <div class="p-0 col-3 h-100 scrollbar-y">
+          <ul class="list-group sub-categories-content"></ul>
+        </div>
+        <div class="p-0 col-6 h-100 scrollbar-y pt-2">
+          <div id="product-name-container" class="row m-0 row-cols-5"></div>
+        </div>
+      </div>
+
       <div class="menu-container mt-5">
         <div class="title-container d-flex justify-content-center">
-          <span role="button" class="fs-2"
-            ><a href="../index.html" class="link-light link-underline-opacity-0"
-              >Product</a
-            ></span
+          <span role="button" class="fs-2 border-3 fw-bold border-orange"
+            >Product</span
           >
-          <span role="button" class="ms-4 fs-2 border-3 fw-bold border-orange"
-            ><a href="#" class="link-light link-underline-opacity-0"
+          <span role="button" class="ms-4 fs-2">
+            <a
+              href="pages/manufacturers.html"
+              class="link-light link-underline-opacity-0 text-decoration-none"
               >Manufacturers</a
             ></span
           >
@@ -1991,4 +2006,5 @@
       });
     }
   </script>
+  <script src="../js/category_list.js"></script>
 </html>
