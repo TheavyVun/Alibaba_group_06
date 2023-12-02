@@ -271,3 +271,14 @@ body {
 .next-business-btn {
   right: -20px;
 }
+/* manufacturers card */
+.img-card-item {
+  width: 7vh;
+  height: 7vh;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+/* ---------------------- */
