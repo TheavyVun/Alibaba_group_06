@@ -67,7 +67,9 @@
             <span class="material-symbols-outlined"> list </span>
             <span class="ms-1">All categories</span>
           </div>
-          <span role="button" class="mx-4">Featured selections</span>
+          <span role="button" class="mx-4 featured-selection-title"
+            >Featured selections</span
+          >
           <span role="button">Trade Assurance</span>
         </div>
         <div class="d-flex justify-content-end">
@@ -79,7 +81,7 @@
       </div>
       <div
         style="height: 400px"
-        class="container-fluid px-5 mx-0 custom-z-index row bg-white d-none show-when-hover py-2"
+        class="container-fluid px-5 mx-0 custom-z-index row bg-white d-none z-index show-when-hover py-2"
       >
         <div class="p-0 col-3 h-100 scrollbar-y">
           <ul class="list-group main-categories-content"></ul>
@@ -91,18 +93,107 @@
           <div id="product-name-container" class="row m-0 row-cols-5"></div>
         </div>
       </div>
+      <!-- working -->
+      <div
+        class="featured-selection d-none container-fluid bg-white p-5 row z-index"
+      >
+        <div
+          class="card text-center mt-2"
+          style="width: 18rem; margin-left: 140px"
+        >
+          <div class="card-body text-dark">
+            <span class="material-symbols-outlined" style="font-size: 60px">
+              workspace_premium
+            </span>
+            <h5 class="card-title hover-underline">
+              <a href="" class="text-decoration-none text-dark hover-underline"
+                >Top ranking</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div
+          class="card text-center mt-2"
+          style="width: 18rem; margin-left: 100px"
+        >
+          <div class="card-body text-dark">
+            <span class="material-symbols-outlined" style="font-size: 60px">
+              news
+            </span>
+            <h5 class="card-title hover-underline">
+              <a href="" class="text-decoration-none text-dark hover-underline"
+                >New arrivals</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div
+          class="card text-center mt-2"
+          style="width: 18rem; margin-left: 100px"
+        >
+          <div class="card-body text-dark">
+            <span class="material-symbols-outlined" style="font-size: 60px">
+              bookmark
+            </span>
+            <h5 class="card-title hover-underline">
+              <a href="" class="text-decoration-none text-dark hover-underline"
+                >Saving Spotlights</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div
+          class="card mt-2 border-0 border-start"
+          style="width: 18rem; margin-left: 100px; margin-left: 200px"
+        >
+          <ul class="list-group">
+            <li
+              class="list-group-item mt-3 list-group-border-none hover-underline"
+            >
+              <a href="" class="text-decoration-none text-dark"
+                >Sample Center</a
+              >
+            </li>
+            <li
+              class="list-group-item mt-3 list-group-border-none hover-underline"
+            >
+              <a href="" class="text-decoration-none text-dark">Trade shows</a>
+            </li>
+            <li
+              class="list-group-item mt-3 list-group-border-none hover-underline"
+            >
+              <a href="" class="text-decoration-none text-dark">Tips</a>
+            </li>
+            <li
+              class="list-group-item mt-3 list-group-border-none hover-underline"
+            >
+              <a href="" class="text-decoration-none text-dark">LIVE</a>
+            </li>
+            <li
+              class="list-group-item mt-3 list-group-border-none hover-underline"
+            >
+              <a href="" class="text-decoration-none text-dark">Global </a>
+            </li>
+            <li
+              class="list-group-item mt-3 list-group-border-none hover-underline"
+            >
+              <a href="" class="text-decoration-none text-dark">Suppliers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <div class="menu-container mt-5">
         <div class="title-container d-flex justify-content-center">
-          <span role="button" class="fs-2 border-3 fw-bold border-orange"
-            >Product</span
-          >
           <span role="button" class="ms-4 fs-2">
             <a
-              href="pages/manufacturers.html"
+              href="../"
               class="link-light link-underline-opacity-0 text-decoration-none"
-              >Manufacturers</a
+              >Product</a
             ></span
+          >
+          <span role="button" class="fs-2 border-3 ms-3 fw-bold border-orange"
+            >Manufacturers</span
           >
         </div>
         <div class="input-group w-75 m-auto mt-4 rounded-pill bg-light p-1">
@@ -149,7 +240,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div id="opacity-hover" class="container">
       <div class="card bg-white border-0 shadow-sm mt-4">
         <div class="card-header bg-transparent border-0">
           <div class="d-flex align-items-center justify-content-between">
