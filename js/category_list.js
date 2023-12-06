@@ -6,6 +6,9 @@ const featuredSelectionTitle = document.querySelector(
   ".featured-selection-title"
 );
 
+const tradeAsurance = document.querySelector(".trade-asurance");
+const tradeAsuranceTitle = document.querySelector(".trade-asurance-title");
+
 // Featured selection
 featuredSelectionTitle.addEventListener("mouseover", () => {
   featuredSelection.classList.remove("d-none");
@@ -39,6 +42,24 @@ hoverContainer.addEventListener("mouseleave", function (event) {
     return;
   }
   hiddenElement.classList.add("d-none");
+  opacityHover.classList.remove("opacity-hover");
+});
+
+// Trade asurance
+tradeAsuranceTitle.addEventListener("mouseover", () => {
+  tradeAsurance.classList.remove("d-none");
+  opacityHover.classList.add("opacity-hover");
+});
+tradeAsurance.addEventListener("mouseleave", () => {
+  tradeAsurance.classList.add("d-none");
+  opacityHover.classList.remove("opacity-hover");
+});
+
+tradeAsuranceTitle.addEventListener("mouseleave", function (event) {
+  if (event.toElement.classList.contains("trade-asurance")) {
+    return;
+  }
+  tradeAsurance.classList.add("d-none");
   opacityHover.classList.remove("opacity-hover");
 });
 
