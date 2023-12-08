@@ -65,6 +65,10 @@ body {
   height: 20px;
   margin: 0 10px;
 }
+.z-index {
+  position: absolute;
+  z-index: 1;
+}
 
 /* Body */
 .search-img :hover {
@@ -248,7 +252,7 @@ body {
 /* For WebKit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
   width: 2px; /* Adjust the width */
-  height: 2px; /* Adjust the height */
+  height: 1px; /* Adjust the height */
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -301,8 +305,9 @@ body {
 }
 /* manufacturers card */
 .img-card-item {
-  width: 7vh;
-  height: 7vh;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
 }
 
 .font-16 {
@@ -310,3 +315,120 @@ body {
 }
 
 /* ---------------------- */
+
+/* card Detail :: To be refactor next */
+
+.scroll-container-a {
+  height: 400px;
+  width: 100%;
+}
+
+.scroll-container-d-none::-webkit-scrollbar {
+  display: none;
+}
+
+.card-supplier-a {
+  position: relative;
+}
+.main-img {
+  width: 100%;
+  height: 400px;
+}
+.item-a {
+  margin: 8px;
+}
+.scroll-content-a {
+  display: inline-block;
+}
+.scroll-container-a {
+  overflow-x: auto;
+  white-space: nowrap;
+  align-self: center;
+}
+.prebtn,
+.nextbtn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.prebtn {
+  top: 0;
+}
+.nextbtn {
+  bottom: 0;
+}
+
+.img-show {
+  display: flex;
+  align-items: start;
+}
+.img-fit {
+  object-fit: contain;
+}
+
+.item-re-bus {
+  display: inline-block;
+  margin: 5px 10px;
+}
+.text-truncate-3 {
+  white-space: nowrap;
+  display:inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  width: 160px;
+}
+.bg-gray {
+  background: #e3e3e3;
+}
+
+.list-img:hover {
+  border: 2px solid black;
+}
+.list-img.active {
+  border: 2px solid black;
+}
+.rounded-4 {
+  border-radius: 8px;
+}
+.rounded-5 {
+  border-radius: 12px;
+}
+.font-12 {
+  font-size: 14px;
+}
+
+.btn-hover:hover {
+  cursor: pointer;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.table-color th {
+  background: #F4F4F4;
+}
+
+.sticky {
+  position: static;
+  top: 0;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #d4d4d4;
+}
+
+.sticky.sticky-active {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px; /* Offset from the top when sticky */
+}
+
+.sticky-h {
+  height: 80vh;
+  overflow-y: auto;
+}
+/* ------------------------------------------------------ */
