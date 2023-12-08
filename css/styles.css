@@ -45,7 +45,10 @@ body {
   font-size: 14px;
   background: #f4f4f4;
 }
-
+.z-index {
+  position: absolute;
+  z-index: 1;
+}
 /* Menu bar */
 .nav-container {
   background-position: center;
@@ -71,7 +74,9 @@ body {
 .search-img :hover {
   color: var(--bn-orange);
 }
-
+.opacity-hover {
+  opacity: 0.25;
+}
 /* Banner */
 .carousel-control-next,
 .carousel-control-prev {

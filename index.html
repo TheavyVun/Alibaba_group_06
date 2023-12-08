@@ -61,8 +61,12 @@
             <span class="material-symbols-outlined"> list </span>
             <span class="ms-1">All categories</span>
           </div>
-          <span role="button" class="mx-4">Featured selections</span>
-          <span role="button">Trade Assurance</span>
+          <span role="button" class="mx-4 featured-selection-title"
+            >Featured selections</span
+          >
+          <span role="button" class="trade-asurance-title"
+            >Trade Assurance</span
+          >
         </div>
         <div class="d-flex justify-content-end">
           <span role="button" class=""> Buyer Central </span>
@@ -73,7 +77,7 @@
       </div>
       <div
         style="height: 400px"
-        class="container-fluid px-5 mx-0 custom-z-index row bg-white d-none show-when-hover py-2 z-index"
+        class="container-fluid px-5 mx-0 custom-z-index row bg-white d-none z-index show-when-hover py-2"
       >
         <div class="p-0 col-3 h-100 scrollbar-y">
           <ul class="list-group main-categories-content"></ul>
@@ -85,15 +89,193 @@
           <div id="product-name-container" class="row m-0 row-cols-5"></div>
         </div>
       </div>
+      <!-- featured selection -->
+      <div
+        class="featured-selection d-none container-fluid bg-white p-5 row z-index"
+      >
+        <div class="col">
+          <div class="card text-center col mt-2">
+            <div class="card-body text-dark">
+              <span class="material-symbols-outlined" style="font-size: 60px">
+                workspace_premium
+              </span>
+              <h5 class="card-title hover-underline">
+                <a
+                  href=""
+                  class="text-decoration-none text-dark hover-underline"
+                  >Top ranking</a
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center col mt-2">
+            <div class="card-body text-dark">
+              <span class="material-symbols-outlined" style="font-size: 60px">
+                news
+              </span>
+              <h5 class="card-title hover-underline">
+                <a
+                  href=""
+                  class="text-decoration-none text-dark hover-underline"
+                  >New arrivals</a
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center col mt-2">
+            <div class="card-body text-dark">
+              <span class="material-symbols-outlined" style="font-size: 60px">
+                bookmark
+              </span>
+              <h5 class="card-title hover-underline">
+                <a
+                  href=""
+                  class="text-decoration-none text-dark hover-underline"
+                  >Saving Spotlights</a
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 border-0 border-start">
+            <ul class="list-group">
+              <li
+                class="list-group-item mt-3 list-group-border-none hover-underline"
+              >
+                <a href="" class="text-decoration-none text-dark"
+                  >Sample Center</a
+                >
+              </li>
+              <li
+                class="list-group-item mt-3 list-group-border-none hover-underline"
+              >
+                <a href="" class="text-decoration-none text-dark"
+                  >Trade shows</a
+                >
+              </li>
+              <li
+                class="list-group-item mt-3 list-group-border-none hover-underline"
+              >
+                <a href="" class="text-decoration-none text-dark">Tips</a>
+              </li>
+              <li
+                class="list-group-item mt-3 list-group-border-none hover-underline"
+              >
+                <a href="" class="text-decoration-none text-dark">LIVE</a>
+              </li>
+              <li
+                class="list-group-item mt-3 list-group-border-none hover-underline"
+              >
+                <a href="" class="text-decoration-none text-dark">Global </a>
+              </li>
+              <li
+                class="list-group-item mt-3 list-group-border-none hover-underline"
+              >
+                <a href="" class="text-decoration-none text-dark">Suppliers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Trade Assurance -->
+      <div
+        style="height: 400px"
+        class="trade-asurance container-fluid d-none bg-white p-5 row text-dark z-index"
+      >
+        <div class="col">
+          <h3>
+            <span
+              class="material-symbols-outlined mx-1 bg-warning rounded-circle p-2 text-white"
+            >
+              currency_exchange </span
+            >Trade Assurance
+          </h3>
+          <h3 class="text-bold">
+            Enjoy protection from payment to <br />
+            delivery.
+          </h3>
+          <button class="btn text-white bg-orange rounded-pill px-4">
+            Learn more
+          </button>
+        </div>
+        <div class="col row gap-2 gap-l-0 justify-content-end">
+          <div
+            role="button"
+            class="col-5 card border-0 justify-content-center bg-light p-4"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <span
+                class="material-symbols-outlined mx-1 bg-warning rounded-circle p-2 text-dark"
+              >
+                check_circle
+              </span>
+              <b>Safe & east payments</b>
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </div>
+          </div>
+          <div
+            role="button"
+            class="col-5 card border-0 justify-content-center bg-light p-4"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <span
+                class="material-symbols-outlined mx-1 bg-warning rounded-circle p-2 text-dark"
+              >
+                currency_exchange
+              </span>
+              <b> Money-back policy</b>
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </div>
+          </div>
+          <div
+            role="button"
+            class="col-5 card border-0 justify-content-center bg-light p-4"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <span
+                class="material-symbols-outlined mx-1 bg-warning rounded-circle p-2 text-dark"
+              >
+                temple_buddhist
+              </span>
+              <b> Shipping & logistics services</b>
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </div>
+          </div>
+          <div
+            role="button"
+            class="col-5 card border-0 justify-content-center bg-light p-4"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <span
+                class="material-symbols-outlined mx-1 bg-warning rounded-circle p-2 text-dark"
+              >
+                construction
+              </span>
+              <b> After-sales protections</b>
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="menu-container mt-5">
         <div class="title-container d-flex justify-content-center">
-          <a href="#" class="text-light text-decoration-none">
-            <span role="button" class="fs-2 border-3 fw-bold border-orange"
-              >Product</span
-            >
-          </a>
-          <a href="./pages/manufacturers.html" class="text-light text-decoration-none"><span role="button" class="ms-4 fs-2">Manufacturers</span></a>
+          <span role="button" class="fs-2 border-3 fw-bold border-orange"
+            >Product</span
+          >
+          <span role="button" class="ms-4 fs-2">
+            <a
+              href="pages/manufacturers.html"
+              class="link-light link-underline-opacity-0 text-decoration-none"
+              >Manufacturers</a
+            ></span
+          >
         </div>
         <div class="input-group w-75 m-auto mt-4 rounded-pill bg-light p-1">
           <input
@@ -138,8 +320,7 @@
         </div>
       </div>
     </div>
-
-    <div class="p-2 p-md-3 p-lg-5">
+    <div id="opacity-hover" class="p-2 p-md-3 p-lg-5">
       <!-- Banner -->
       <div>
         <div
@@ -1368,7 +1549,10 @@
         <h2>Get product inspiration</h2>
         <div class="pt-4 row g-2 g-lg-3 row-cols-2 row-cols-md-5 row-cols-lg-6">
           <div class="col col-lg-2">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="//s.alicdn.com/@sc04/kf/H762ade4ace03473e850e6b7a38778d5bc.png_350x350.jpg"
@@ -1377,7 +1561,8 @@
                 />
                 <div class="card-body">
                   <p class="card-text text-truncate-2">
-                    2023 Hot selling BT Fitness Bracelet Wear Touch Screen Sports Call Reminder Smart Watch
+                    2023 Hot selling BT Fitness Bracelet Wear Touch Screen
+                    Sports Call Reminder Smart Watch
                   </p>
                   <h6 class="card-title"><strong>$3.88 - $7.88</strong></h6>
                   <p class="m-0">MOQ: 2 pieces</p>
@@ -1386,7 +1571,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/Heb5f1124426040daa274491b5274807eZ.jpg_480x480.jpg"
@@ -1406,7 +1594,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/He6cec7e7b9484188babb90ea8799c8a4f.jpg_480x480.jpg"
@@ -1424,7 +1615,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H09c1632c916d49bc80f157b4c0fab29cE.jpg_480x480.jpg"
@@ -1443,7 +1637,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H40fc2ac1ab2f49c192d52d7d990887d8c.jpg_480x480.jpg"
@@ -1462,7 +1659,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/He0af5801e5174ee081847e67077f0cc9N.jpg_480x480.jpg"
@@ -1471,8 +1671,8 @@
                 />
                 <div class="card-body">
                   <p class="card-text text-truncate-2">
-                    New 1/20 Scale Alloy Excavator Toy 1/24 Model RC Car Metal Die
-                    Casting Construction Engineering Toy 2.4GHz
+                    New 1/20 Scale Alloy Excavator Toy 1/24 Model RC Car Metal
+                    Die Casting Construction Engineering Toy 2.4GHz
                   </p>
                   <h6 class="card-title"><strong>$5.38 - $15.25</strong></h6>
                   <p class="m-0">MOQ: 2.0 pieces</p>
@@ -1482,7 +1682,10 @@
           </div>
 
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H4cfc420805354c0988ed7017cdd49ac7y.jpg_480x480.jpg"
@@ -1501,7 +1704,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H4a63b9300e2f450eaf3a2b3a164194a1Q.jpg_480x480.jpg"
@@ -1520,7 +1726,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H3d49f6c398244fe7ba465c12e542de9a9.jpg_480x480.jpg"
@@ -1529,8 +1738,8 @@
                 />
                 <div class="card-body">
                   <p class="card-text text-truncate-2">
-                    Botu Sanrio Erasable Neutral Pen Melody Kuromi Roller Ball Pen
-                    School Supplies Stationery Wholesale
+                    Botu Sanrio Erasable Neutral Pen Melody Kuromi Roller Ball
+                    Pen School Supplies Stationery Wholesale
                   </p>
                   <h6 class="card-title"><strong>$0.15</strong></h6>
                   <p class="m-0">MOQ: 144 pieces</p>
@@ -1539,7 +1748,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/Hbc1ca027fbef4e05a169f57143102faeu.jpg_480x480.jpg"
@@ -1559,7 +1771,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H17627c15d21540c8b2dbeea583a0550eG.jpg_480x480.jpg"
@@ -1578,7 +1793,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H2745e0d6c3ac4c7c878d30094968a2a7L.jpg_480x480.jpg"
@@ -1598,7 +1816,10 @@
           </div>
 
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H90b58e3ebde54248ba3d916a7386f4e48.jpg_480x480.jpg"
@@ -1617,7 +1838,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H1fadc187f1444b1187531c1cd62c72f5H.jpg_480x480.jpg"
@@ -1636,7 +1860,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/Hedc873aa9bae4913aa977b7db59abf77z.jpg_480x480.jpg"
@@ -1645,8 +1872,8 @@
                 />
                 <div class="card-body">
                   <p class="card-text text-truncate-2">
-                    2023The best-selling slingshot rubber gun Steel ball slingshot
-                    Special slingshot for hunting Shooting
+                    2023The best-selling slingshot rubber gun Steel ball
+                    slingshot Special slingshot for hunting Shooting
                   </p>
                   <h6 class="card-title"><strong>$35.00 - $38.00</strong></h6>
                   <p class="m-0">MOQ: 2 pieces</p>
@@ -1655,7 +1882,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H6b36ba98c4dd4fa6928e3e960e3fdd3eM.jpg_480x480.jpg"
@@ -1674,7 +1904,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H761a9c09d7274fc4a98f2a39b2115a06s.jpg_480x480.jpg"
@@ -1683,8 +1916,8 @@
                 />
                 <div class="card-body">
                   <p class="card-text text-truncate-2">
-                    Customize beaded bracelet fashion casual men's watch bracelet
-                    set 3pcs/set
+                    Customize beaded bracelet fashion casual men's watch
+                    bracelet set 3pcs/set
                   </p>
                   <h6 class="card-title"><strong>$2.99 - $3.99</strong></h6>
                   <p class="m-0">MOQ: 2 sets</p>
@@ -1693,7 +1926,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H21f574ada87541398ff5cfab4c6cf0a4M.jpg_480x480.jpg"
@@ -1712,7 +1948,10 @@
           </div>
 
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H22889d5831e14f56bb9591023db64a2dO.jpg_480x480.jpg"
@@ -1731,7 +1970,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/Hb8d481a0ec2e4779be411159a64d5f3bg.png_480x480.jpg"
@@ -1750,7 +1992,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H90621f542bba470486cf85fc7679bb12K.jpg_480x480.jpg"
@@ -1769,7 +2014,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H4184721dd7e04853a6c9a80394d1acc2n.jpg_480x480.jpg"
@@ -1788,7 +2036,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H5e0f98d4a1634873a62e337ff0f30aa38.jpg_480x480.jpg"
@@ -1807,7 +2058,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/Hcbfe4e3a3c23448a8cd9db414145abc98.jpg_480x480.jpg"
@@ -1817,7 +2071,8 @@
                 <div class="card-body">
                   <p class="card-text text-truncate-2">
                     Agricultural Electrostatic Portable Battery Operated
-                    Disinfecting Thermal Fogger Machine Mist Maker For Greenhouse
+                    Disinfecting Thermal Fogger Machine Mist Maker For
+                    Greenhouse
                   </p>
                   <h6 class="card-title"><strong>$80.00 - $100.00</strong></h6>
                   <p class="m-0">MOQ: 1 set</p>
@@ -1827,7 +2082,10 @@
           </div>
 
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/Hb69f1ecf483747808e16bf79440a214e0.jpg_480x480.jpg"
@@ -1846,7 +2104,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H3b45d32599064db5bf6d5e0a5ce1c8c5Q.jpg_480x480.jpg"
@@ -1856,8 +2117,8 @@
                 <div class="card-body">
                   <p class="card-text text-truncate-2">
                     High quality design custom branded original football
-                    chaussures de football pour hommes sports men's football shoes
-                    soccer shoes
+                    chaussures de football pour hommes sports men's football
+                    shoes soccer shoes
                   </p>
                   <h6 class="card-title"><strong>$12.15 - $15.88</strong></h6>
                   <p class="m-0">MOQ: 5 pairs</p>
@@ -1866,7 +2127,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H6049e16fa43a407b8860eae452d4c3f48.jpg_480x480.jpg"
@@ -1875,8 +2139,8 @@
                 />
                 <div class="card-body">
                   <p class="card-text text-truncate-2">
-                    2022 5G Smartphone S22 Ultra 6.9 inch Screen 16+512GB Android
-                    Mobile Phones ROM+RAM Original Unlocked Cell Phone
+                    2022 5G Smartphone S22 Ultra 6.9 inch Screen 16+512GB
+                    Android Mobile Phones ROM+RAM Original Unlocked Cell Phone
                   </p>
                   <h6 class="card-title"><strong>$22.00 - $45.50</strong></h6>
                   <p class="m-0">MOQ: 1 piece</p>
@@ -1885,7 +2149,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H1cce164e4bb749a9acd9d6a6b5e711bah.jpg_480x480.jpg"
@@ -1894,7 +2161,8 @@
                 />
                 <div class="card-body">
                   <p class="card-text text-truncate-2">
-                    Elastic Durable Slingshot Replacement Rubber Band Green color
+                    Elastic Durable Slingshot Replacement Rubber Band Green
+                    color
                   </p>
                   <h6 class="card-title"><strong>$1.20 - $1.80</strong></h6>
                   <p class="m-0">MOQ: 100 pieces</p>
@@ -1903,7 +2171,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/Hf0a2d433a5e5404dbe401b40080aaa23x.jpg_480x480.jpg"
@@ -1922,7 +2193,10 @@
             </a>
           </div>
           <div class="col">
-            <a href="./pages/cardDetail.html" class="text-decoration-none text-dark">
+            <a
+              href="./pages/cardDetail.html"
+              class="text-decoration-none text-dark"
+            >
               <div class="card border-0 h-100-p">
                 <img
                   src="https://s.alicdn.com/@sc04/kf/H85ecee4693d845ef9a741255a5b8b0c18.jpg_480x480.jpg"

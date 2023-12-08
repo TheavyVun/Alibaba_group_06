@@ -1,12 +1,68 @@
 const hoverContainer = document.querySelector(".hover-element");
 const hiddenElement = document.querySelector(".show-when-hover");
+const opacityHover = document.querySelector("#opacity-hover");
+const featuredSelection = document.querySelector(".featured-selection");
+const featuredSelectionTitle = document.querySelector(
+  ".featured-selection-title"
+);
+
+const tradeAsurance = document.querySelector(".trade-asurance");
+const tradeAsuranceTitle = document.querySelector(".trade-asurance-title");
+
+// Featured selection
+featuredSelectionTitle.addEventListener("mouseover", () => {
+  featuredSelection.classList.remove("d-none");
+  opacityHover.classList.add("opacity-hover");
+});
+featuredSelection.addEventListener("mouseleave", () => {
+  featuredSelection.classList.add("d-none");
+  opacityHover.classList.remove("opacity-hover");
+});
+
+featuredSelectionTitle.addEventListener("mouseleave", function (event) {
+  if (event.toElement.classList.contains("featured-selection")) {
+    return;
+  }
+  featuredSelection.classList.add("d-none");
+  opacityHover.classList.remove("opacity-hover");
+});
+
+// all categories
 hoverContainer.addEventListener("mouseover", () => {
   hiddenElement.classList.remove("d-none");
+  opacityHover.classList.add("opacity-hover");
 });
 
 hiddenElement.addEventListener("mouseleave", () => {
   hiddenElement.classList.add("d-none");
+  opacityHover.classList.remove("opacity-hover");
 });
+hoverContainer.addEventListener("mouseleave", function (event) {
+  if (event.toElement.classList.contains("show-when-hover")) {
+    return;
+  }
+  hiddenElement.classList.add("d-none");
+  opacityHover.classList.remove("opacity-hover");
+});
+
+// Trade asurance
+tradeAsuranceTitle.addEventListener("mouseover", () => {
+  tradeAsurance.classList.remove("d-none");
+  opacityHover.classList.add("opacity-hover");
+});
+tradeAsurance.addEventListener("mouseleave", () => {
+  tradeAsurance.classList.add("d-none");
+  opacityHover.classList.remove("opacity-hover");
+});
+
+tradeAsuranceTitle.addEventListener("mouseleave", function (event) {
+  if (event.toElement.classList.contains("trade-asurance")) {
+    return;
+  }
+  tradeAsurance.classList.add("d-none");
+  opacityHover.classList.remove("opacity-hover");
+});
+
 const products = [
   {
     categoryName: "Home Decor",
