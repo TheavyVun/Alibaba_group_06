@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="nav-container text-light">
+    <div class="nav-container text-light pt-4">
       <nav
         class="navigation d-flex justify-content-between align-items-center container-fluid px-5"
       >
@@ -73,7 +73,7 @@
       </div>
       <div
         style="height: 400px"
-        class="container-fluid px-5 mx-0 custom-z-index row bg-white d-none show-when-hover py-2"
+        class="container-fluid px-5 mx-0 custom-z-index row bg-white d-none show-when-hover py-2 z-index"
       >
         <div class="p-0 col-3 h-100 scrollbar-y">
           <ul class="list-group main-categories-content"></ul>
@@ -88,10 +88,12 @@
 
       <div class="menu-container mt-5">
         <div class="title-container d-flex justify-content-center">
-          <span role="button" class="fs-2 border-3 fw-bold border-orange"
-            >Product</span
-          >
-          <span role="button" class="ms-4 fs-2">Manufacturers</span>
+          <a href="#" class="text-light text-decoration-none">
+            <span role="button" class="fs-2 border-3 fw-bold border-orange"
+              >Product</span
+            >
+          </a>
+          <a href="./pages/manufacturers.html" class="text-light text-decoration-none"><span role="button" class="ms-4 fs-2">Manufacturers</span></a>
         </div>
         <div class="input-group w-75 m-auto mt-4 rounded-pill bg-light p-1">
           <input

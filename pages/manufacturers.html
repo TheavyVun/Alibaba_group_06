@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <div class="nav-container pt-4 text-light">
+    <div class="nav-container text-light pt-4">
       <nav
         class="navigation d-flex justify-content-between align-items-center container-fluid px-5"
       >
@@ -63,7 +63,7 @@
       </nav>
       <div class="d-flex justify-content-between container-fluid px-5 mt-3">
         <div class="d-flex">
-          <div class="d-flex" role="button">
+          <div class="d-flex hover-element hover-border-b pb-1" role="button">
             <span class="material-symbols-outlined"> list </span>
             <span class="ms-1">All categories</span>
           </div>
@@ -77,18 +77,29 @@
           <span role="button" class="ms-4">Get the app</span>
         </div>
       </div>
+      <div
+        style="height: 400px"
+        class="container-fluid px-5 mx-0 custom-z-index row bg-white d-none show-when-hover py-2 z-index"
+      >
+        <div class="p-0 col-3 h-100 scrollbar-y">
+          <ul class="list-group main-categories-content"></ul>
+        </div>
+        <div class="p-0 col-3 h-100 scrollbar-y">
+          <ul class="list-group sub-categories-content"></ul>
+        </div>
+        <div class="p-0 col-6 h-100 scrollbar-y pt-2">
+          <div id="product-name-container" class="row m-0 row-cols-5"></div>
+        </div>
+      </div>
+
       <div class="menu-container mt-5">
         <div class="title-container d-flex justify-content-center">
-          <span role="button" class="fs-2"
-            ><a href="../index.html" class="link-light link-underline-opacity-0"
-              >Product</a
-            ></span
-          >
-          <span role="button" class="ms-4 fs-2 border-3 fw-bold border-orange"
-            ><a href="#" class="link-light link-underline-opacity-0"
-              >Manufacturers</a
-            ></span
-          >
+          <a href="./../index.html" class="text-light text-decoration-none">
+            <span role="button" class="fs-2 border-3 "
+              >Product</span
+            >
+          </a>
+          <a href="#" class="text-light text-decoration-none"><span role="button" class="ms-4 fs-2 fw-bold border-orange">Manufacturers</span></a>
         </div>
         <div class="input-group w-75 m-auto mt-4 rounded-pill bg-light p-1">
           <input
@@ -1969,6 +1980,7 @@
       </div>
     </div>
   </body>
+  <script src="./../js/category_list.js"></script>
   <script>
     // Get the carousel element
     const allCarouselCardItems = document.querySelectorAll(
