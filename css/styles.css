@@ -8,8 +8,25 @@
 .text-orange {
   color: var(--bn-orange);
 }
-.border-orange {
+.border-b-orange {
   border-bottom: solid 2px var(--bn-orange);
+}
+.no-border:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.no-border {
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.border-orange {
+  border: solid 2px var(--bn-orange);
+}
+.card-w-200 {
+  width: 300px;
 }
 .bg-orange {
   background-color: var(--bn-orange);
@@ -372,7 +389,7 @@ body {
 }
 .text-truncate-3 {
   white-space: nowrap;
-  display:inline-block;
+  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
@@ -410,7 +427,7 @@ body {
 }
 
 .table-color th {
-  background: #F4F4F4;
+  background: #f4f4f4;
 }
 
 .sticky {
@@ -430,5 +447,14 @@ body {
 .sticky-h {
   height: 80vh;
   overflow-y: auto;
+}
+
+/* Saving spotlight*/
+.scroll-card-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  align-self: center;
+  border: none;
 }
 /* ------------------------------------------------------ */
