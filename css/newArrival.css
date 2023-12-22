@@ -1,3 +1,7 @@
+/* Global */
+:root {
+    --bn-orange: #ff6a00;
+  }
 .list-last {
     font-size: 13px;
     color: rgb(254, 105, 105);
@@ -19,10 +23,6 @@
 
 .desc-text {
     font-size: 20px;
-}
-
-.material-symbols-outlined {
-    font-size: 40px;
 }
 
 /* .new-tends{
@@ -65,4 +65,21 @@ ul li a {
 
 .border-orange {
     border-bottom: solid 2px orange;
+}
+.border-oranges {
+    border: solid 2px var(--bn-orange);
+}
+.bg-orange {
+    background-color: var(--bn-orange);
+}
+.no-border:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.no-border {
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
