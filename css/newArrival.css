@@ -8,17 +8,13 @@
 }
 
 .inner-container {
-    background: linear-gradient(rgb(119, 207, 254), rgb(168, 223, 249), rgb(231, 230, 230), rgb(235, 233, 233));
+    background-image: linear-gradient(180deg,rgba(171,206,255,.78),rgba(171,206,255,0) 88%);
 }
 
 .benefit {
     align-items: center;
     display: flex;
     margin-top: 20px;
-}
-
-.inner-container {
-    padding: 2%;
 }
 
 .desc-text {
