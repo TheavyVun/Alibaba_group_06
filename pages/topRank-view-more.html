@@ -4,37 +4,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/topRank-view-more.css">
   <title>Alibaba.com</title>
   <link rel="icon" type="image/x-icon" href="../images/logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/css/topRank-view-more.css">
 
 </head>
 
 <body>
+  <div class="pt-4 pb-3 d-none d-sm-block border-bottom" style="background: white;">
+    <nav
+      class="navigation d-flex justify-content-between align-items-center container-fluid px-5"
+    >
+      <a href="./../index.html" class="nav-left pb-3 me-3">
+        <img width="180px" src="../images/alibaba-logo.png" alt="" />
+      </a>
+
+      <!-- search  -->
+      <div class="input-group w-75 rounded-pill border-1 p-0 border-orange">
+        <input
+          type="text"
+          class="form-control py-2 no-border rounded-pill input-search"
+          placeholder="What are you looking for..."
+        />
+        <span
+          role="button"
+          class="input-group-text bg-orange rounded-start m-0 rounded-pill text-light px-4"
+          id="basic-addon2"
+          ><span class="material-symbols-outlined"> search </span>
+          Search</span
+        >
+      </div>
+
+      <div class="nav-right d-flex justify-content-end align-items-center">
+        <div
+          role="button"
+          class="ship d-flex justify-content-between align-items-center"
+        ></div>
+        <div
+          class="language ms-3 d-flex justify-content-between align-items-center"
+          role="button"
+        >
+          <span class="material-symbols-outlined mx-1"> language </span>
+          <span>EN</span>
+        </div>
+        <div class="message mx-4" role="button">
+          <span class="material-symbols-outlined"> chat </span>
+        </div>
+        <div class="order" role="button">
+          <span class="material-symbols-outlined"> assignment </span>
+        </div>
+        <div class="cart mx-4" role="button">
+          <span class="material-symbols-outlined"> shopping_cart </span>
+        </div>
+        <div class="cart" role="button">
+          <span class="material-symbols-outlined"> person </span>
+        </div>
+      </div>
+    </nav>
+  </div>
   <div class="">
     <div class="banners">
-      <img class="bannerimg"
+      <img class="image bannerimg"
         src="	https://s.alicdn.com/@img/imgextra/i1/O1CN01CkOjeV1EaaXM2zUJL_!!6000000000368-2-tps-1920-220.png" alt="">
     </div>
     <div class="top-ranking-detail container">
-      <!-- <h2 class="pt-5 pb-5">Top ranking products</h2>
-              <div class="top-banner-wrapper">
-                  <div class="top-banner-title">
-                      <div class="hot-selling">Hot selling</div>
-                      <h1
-                          class="top-banner-zone-title-cpv">Mesh Upper Soccer
-                          Shoes</h1>
-                      <div class="top-banner-zone-desc">Ready-to-ship
-                          products which are automatically ranked based on
-                          order volume from the last 90 days. Updated daily.
-                      </div>
-                      <button class="More-rankings">More Rankings</button>
-                  </div>
-  
-              </div> -->
-
       <div class="tab mt-4 mb-4">
         <button class="tablink active" onclick="openTab(event, 'tab1')">Most popular</button>
         <button class="tablink " onclick="openTab(event, 'tab2')">Hot selling</button>
@@ -58,12 +94,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H6a253ab2b145420d9cc9198baa0962ab0.png_250x250xz.jpg"
                             alt="">
                         </div>
@@ -74,7 +110,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/He527faab5e284ed0aa3ecd62b10fa9b5N.png_250x250xz.jpg"
                             alt="">
                         </div>
@@ -85,7 +121,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H8459e634da6a41dc8e9a0cef1333bb6aC.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -110,12 +146,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -126,7 +162,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -137,7 +173,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -163,12 +199,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -179,7 +215,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -190,7 +226,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -218,12 +254,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -234,7 +270,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -245,7 +281,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -271,12 +307,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -287,7 +323,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -298,7 +334,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -325,12 +361,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -341,7 +377,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -352,7 +388,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -386,12 +422,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -402,7 +438,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -413,7 +449,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -439,12 +475,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -455,7 +491,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -466,7 +502,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -492,12 +528,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -508,7 +544,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -519,7 +555,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -545,12 +581,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -561,7 +597,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -572,7 +608,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -598,12 +634,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -614,7 +650,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -625,7 +661,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -651,12 +687,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -667,7 +703,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -678,7 +714,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -710,12 +746,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H2dcb476fe5374c8fafb875cc8cccca4eT.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -726,7 +762,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H04e58e6da20e467d9ed95e8482a06b02A.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -737,7 +773,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hd042b26dbafe4d0fa95575486285e300d.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -763,12 +799,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H8f30047f295a41ac81607ea187006782I.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -779,7 +815,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H25292aec36d54b10ae098af8dddc01edb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -790,7 +826,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hd79c2b327aad4f6591323908973f4d434.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -816,12 +852,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H8f30047f295a41ac81607ea187006782I.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -832,7 +868,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H25292aec36d54b10ae098af8dddc01edb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -843,7 +879,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hd79c2b327aad4f6591323908973f4d434.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -869,12 +905,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H8f30047f295a41ac81607ea187006782I.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -885,7 +921,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H25292aec36d54b10ae098af8dddc01edb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -896,7 +932,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hd79c2b327aad4f6591323908973f4d434.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -922,12 +958,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H8f30047f295a41ac81607ea187006782I.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -938,7 +974,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H25292aec36d54b10ae098af8dddc01edb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -949,7 +985,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hd79c2b327aad4f6591323908973f4d434.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -975,12 +1011,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H8f30047f295a41ac81607ea187006782I.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -991,7 +1027,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H25292aec36d54b10ae098af8dddc01edb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1002,7 +1038,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hd79c2b327aad4f6591323908973f4d434.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1034,12 +1070,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1050,7 +1086,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1061,7 +1097,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1087,12 +1123,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1103,7 +1139,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1114,7 +1150,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1140,12 +1176,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1156,7 +1192,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1167,7 +1203,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1193,12 +1229,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1209,7 +1245,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1220,7 +1256,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1246,12 +1282,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1262,7 +1298,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1273,7 +1309,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1299,12 +1335,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H3ea5f3863e7a479bb764694bf680ee92Y.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1315,7 +1351,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H4472d435479a4207869df50c21d2117cb.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1326,7 +1362,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/Hf590750a8ed2443ea4bf748353e8e6f9K.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1359,12 +1395,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H6a253ab2b145420d9cc9198baa0962ab0.png_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1375,7 +1411,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/He527faab5e284ed0aa3ecd62b10fa9b5N.png_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1386,7 +1422,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H8459e634da6a41dc8e9a0cef1333bb6aC.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1411,12 +1447,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1427,7 +1463,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1438,7 +1474,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1464,12 +1500,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1480,7 +1516,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1491,7 +1527,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1519,12 +1555,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1535,7 +1571,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1546,7 +1582,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1572,12 +1608,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1588,7 +1624,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1599,7 +1635,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1626,12 +1662,12 @@
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                     </svg>
                   </div>
-                  <p><span>2.2M+</span> view in ther past 30 days</p>
+                  <p><span class="color-red">2.2M+</span> view in ther past 30 days</p>
                   <div class="row">
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="	https://s.alicdn.com/@sc04/kf/H416eeb87a1834d4ca2256c95ef92ca11e.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1642,7 +1678,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/H5da03482ec49407b9e4b8d3320fc654fv.jpg_250x250xz.jpg"
                             alt="">
                         </div>
@@ -1653,7 +1689,7 @@
                     <div class="col-4">
                       <div class="card item-cards">
                         <div class="item-img pb-2">
-                          <img class="img"
+                          <img class="image img"
                             src="https://s.alicdn.com/@sc04/kf/Ha2fd44b7918f41bd84fbc96dbc8a84b3s.jpg_250x250xz.jpg"
                             alt="">
                         </div>

@@ -1,3 +1,7 @@
+/* Global */
+:root {
+    --bn-orange: #ff6a00;
+  }
 .banners{
     width: 100%;
 }
@@ -31,14 +35,14 @@
     justify-content: space-around;
     align-items: center;
 }
-img{
+.image{
     width: 100%;
 }
 .img{
     border-radius: 15px;
 
 }
-span{
+.color-red {
     color: red;
 }
 .card .item-cards{
@@ -51,4 +55,21 @@ span{
 .link {
     color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
     text-decoration: none;
+}
+.border-orange {
+    border: solid 2px var(--bn-orange);
+}
+.bg-orange {
+    background-color: var(--bn-orange);
+}
+.no-border:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.no-border {
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
