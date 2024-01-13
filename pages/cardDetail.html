@@ -8,6 +8,10 @@
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
         />
         <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -18,14 +22,14 @@
         <link rel="stylesheet" href="../css/styles.css" />
       </head>
 <body class="bg-light">
-  <div class="text-dark border-bottom" style="background: white;">
+  <div class="text-dark border-bottom pb-2" style="background: white;">
     <nav
-      class="navigation d-flex justify-content-between align-items-center container-fluid px-5 pt-3"
+      class="navigation d-flex justify-content-between align-items-center container-fluid px-2 px-md-5 pt-3"
     >
-      <a href="./../index.html" class="nav-left">
+      <a href="./../index.html" class="nav-left mb-3">
         <img width="180px" src="../images/alibaba-logo.png" alt="" />
       </a>
-      <div class="menu-container w-50 border border-dark rounded-pill" style="background: white;">
+      <div class="d-none d-md-block menu-container w-50 border border-dark rounded-pill" style="background: white;">
         <div class="input-group m-auto rounded-pill bg-light p-1">
           <input
             type="text"
@@ -48,36 +52,48 @@
         </div>
       </div>
       <div class="nav-right d-flex justify-content-end align-items-center">
-        <div
-          role="button"
-          class="ship d-flex justify-content-between align-items-center"
-        >
-          <span>Ship to:</span>
-          <img class="flag" src="../images/cam-flag.png" alt="" />
-          <span>KH</span>
+        <div class="d-none d-xxl-flex">
+          <div
+            role="button"
+            class="ship d-flex justify-content-between align-items-center"
+          >
+            <span>Ship to:</span>
+            <img class="flag" src="../images/cam-flag.png" alt="" />
+            <span>KH</span>
+          </div>
+          <div
+            class="language ms-3 d-flex justify-content-between align-items-center"
+            role="button"
+          >
+            <span class="material-symbols-outlined mx-1"> language </span>
+            <span>English-USD</span>
+          </div>
         </div>
-        <div
-          class="language ms-3 d-flex justify-content-between align-items-center"
-          role="button"
-        >
-          <span class="material-symbols-outlined mx-1"> language </span>
-          <span>English-USD</span>
+        <div class="d-none d-lg-flex">
+          <div class="message mx-4" role="button">
+            <span class="material-symbols-outlined"> chat </span>
+          </div>
+          <div class="order" role="button">
+            <span class="material-symbols-outlined"> assignment </span>
+          </div>
+          <div class="cart mx-4" role="button">
+            <span class="material-symbols-outlined"> shopping_cart </span>
+          </div>
+          <div class="cart" role="button">
+            <span class="material-symbols-outlined"> person </span>
+          </div>
         </div>
-        <div class="message mx-4" role="button">
-          <span class="material-symbols-outlined"> chat </span>
-        </div>
-        <div class="order" role="button">
-          <span class="material-symbols-outlined"> assignment </span>
-        </div>
-        <div class="cart mx-4" role="button">
-          <span class="material-symbols-outlined"> shopping_cart </span>
-        </div>
-        <div class="cart" role="button">
-          <span class="material-symbols-outlined"> person </span>
+        <div class="d-flex d-lg-none">
+          <div class="cart mx-4" role="button">
+            <span class="material-symbols-outlined"> chat </span>
+          </div>
+          <div class="cart" role="button">
+            <span class="material-symbols-outlined"> account_circle </span>
+          </div>
         </div>
       </div>
     </nav>
-    <div class="d-flex justify-content-between container-fluid px-5 mt-3">
+    <div class="d-none d-lg-flex justify-content-between container-fluid px-5 mt-3">
       <div class="d-flex">
         <div class="d-flex hover-element hover-border-b pb-1" role="button">
           <span class="material-symbols-outlined"> list </span>
@@ -96,7 +112,7 @@
   </div>
   <div class="container mt-4">
     <div class="row g-5">
-      <div class="col-8">
+      <div class="col col-lg-8">
         <h5 class="fw-bold">2023 Hot selling BT Fitness Bracelet Wear Touch Screen Sports Call Reminder Smart Watch</h5>
         <p>No reviews yet - 10 buyers</p>
         <div class="d-flex align-items-center p-1 rounded-3" style="background: #87cfeb48;">
@@ -110,7 +126,7 @@
             <div>
                 <a href="" class="text-dark">Shenzhen Top Way International Forwarding Co., Ltd.</a>
             </div>
-            <p class="m-0 d-flex align-items-center">
+            <p class="m-0 d-flex align-items-center d-none d-lg-block">
                 <img
                   src="https://s.alicdn.com/@img/imgextra/i4/O1CN01oR5RHV1sorSuIbjiH_!!6000000005814-2-tps-123-42.png"
                   alt=""
@@ -131,7 +147,7 @@
         </div>
         <div>
           <div class="pt-4 img-show">
-            <div class="card-supplier-a">
+            <div class="card-supplier-a d-none d-lg-block">
               <div class="scroll-container-a scroll-container-d-none">
                 <div class="scroll-content-a" id="listContainer">
                   <div class="item-a my-0">
@@ -613,7 +629,7 @@
             </div>
         </div>
       </div>
-      <div class="col-4 border h-100 sticky rounded-5" id="stickyElement">
+      <div class="col col-lg-4 border h-100 sticky rounded-5" id="stickyElement">
         <p><strong>#11 </strong><a href="" class="text-dark">Most popular in Virgin Indian Hair</a></p>
         <hr>
         <div class="d-flex align-items-center justify-content-between" style="background: #efeae2;">
@@ -697,66 +713,76 @@
     <div>
       <h5>Frequently bought together</h5>
       <div class="d-inline-block">
-        <div class="item-re-bus ms-0">
-          <div>
-            <img src="https://s.alicdn.com/@sc04/kf/Hce7e2bbf7af74100b95d0c80b0b22167B.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+        <a href="./cardDetail.html" class="text-decoration-none text-dark">
+          <div class="item-re-bus ms-0">
+            <div>
+              <img src="https://s.alicdn.com/@sc04/kf/Hce7e2bbf7af74100b95d0c80b0b22167B.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+            </div>
+            <div class="">
+              <p class="text-truncate-3 my-2">
+                Marine insurance for shipping by CMA ship to USA/LA/NY Sea Cargo From China Shipping Company
+              </p>
+              <p class="fw-bold m-0">$10.00 - $99.00</p>
+              <p class="m-0">Min. order: 50.0 metric tons</p>
+            </div>
           </div>
-          <div class="">
-            <p class="text-truncate-3 my-2">
-              Marine insurance for shipping by CMA ship to USA/LA/NY Sea Cargo From China Shipping Company
-            </p>
-            <p class="fw-bold m-0">$10.00 - $99.00</p>
-            <p class="m-0">Min. order: 50.0 metric tons</p>
+        </a>
+        <a href="./cardDetail.html" class="text-decoration-none text-dark">
+          <div class="item-re-bus">
+            <div>
+              <img src="https://s.alicdn.com/@sc04/kf/H9f3ee47ff4fb4e6e8e5f6a9512866ba9I.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+            </div>
+            <div class="">
+              <p class="text-truncate-3 my-2">
+                sea Logistics agent sea shipping freight from China to Canada freight forwarder to canada
+              </p>
+              <p class="fw-bold m-0">$0.50 - $1.00</p>
+              <p class="m-0">Min. order: 50 kilograms</p>
+            </div>
           </div>
-        </div>
-        <div class="item-re-bus">
-          <div>
-            <img src="https://s.alicdn.com/@sc04/kf/H9f3ee47ff4fb4e6e8e5f6a9512866ba9I.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+        </a>
+        <a href="./cardDetail.html" class="text-decoration-none text-dark">
+          <div class="item-re-bus">
+            <div>
+              <img src="https://s.alicdn.com/@sc04/kf/Hf3409917afaa4d4eb01b33a6bdb29be0g.png_220x220.png" width="160" height="160" class="rounded-4" alt="">
+            </div>
+            <div class="">
+              <p class="text-truncate-3 my-2">
+                F9-5C TWS 5.0 Wireless Earphone Headphone Hifi Stereo Headset  LED Display Power Bank Wireless Gaming Earbuds
+              </p>
+              <p class="fw-bold m-0">$5.22 - $7.22</p>
+              <p class="m-0">Min. order: 20 pieces</p>
+            </div>
           </div>
-          <div class="">
-            <p class="text-truncate-3 my-2">
-              sea Logistics agent sea shipping freight from China to Canada freight forwarder to canada
-            </p>
-            <p class="fw-bold m-0">$0.50 - $1.00</p>
-            <p class="m-0">Min. order: 50 kilograms</p>
+        </a>
+        <a href="./cardDetail.html" class="text-decoration-none text-dark">
+          <div class="item-re-bus">
+            <div>
+              <img src="https://s.alicdn.com/@sc04/kf/H675fb70626244a81a971644c7565025ds.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+            </div>
+            <div class="">
+              <p class="text-truncate-3 my-2">
+                Chinese Quality Control Inspector Affordable Price Final Pre Shipment Inspection Check Service In China Product Inspection
+              </p>
+              <p class="fw-bold m-0">$99.00</p>
+              <p class="m-0">Min. order: 1 case</p>
+            </div>
           </div>
-        </div>
-        <div class="item-re-bus">
-          <div>
-            <img src="https://s.alicdn.com/@sc04/kf/Hf3409917afaa4d4eb01b33a6bdb29be0g.png_220x220.png" width="160" height="160" class="rounded-4" alt="">
+        </a>
+        <a href="./cardDetail.html" class="text-decoration-none text-dark">
+          <div class="item-re-bus">
+            <div>
+              <img src="https://s.alicdn.com/@sc04/kf/Hd03008657b2a4c71ad1879e5de37ca5dF.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+            </div>
+            <div class="">
+              <p class="text-truncate-3 my-2">
+                Third party inspection company / Product inspection services quality control inspection in shenzhen
+              </p>
+              <p class="fw-bold m-0">$50.00 - $200.00</p>
+              <p class="m-0">Min. order: 1.0 case</p>
+            </div>
           </div>
-          <div class="">
-            <p class="text-truncate-3 my-2">
-              F9-5C TWS 5.0 Wireless Earphone Headphone Hifi Stereo Headset  LED Display Power Bank Wireless Gaming Earbuds
-            </p>
-            <p class="fw-bold m-0">$5.22 - $7.22</p>
-            <p class="m-0">Min. order: 20 pieces</p>
-          </div>
-        </div>
-        <div class="item-re-bus">
-          <div>
-            <img src="https://s.alicdn.com/@sc04/kf/H675fb70626244a81a971644c7565025ds.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
-          </div>
-          <div class="">
-            <p class="text-truncate-3 my-2">
-              Chinese Quality Control Inspector Affordable Price Final Pre Shipment Inspection Check Service In China Product Inspection
-            </p>
-            <p class="fw-bold m-0">$99.00</p>
-            <p class="m-0">Min. order: 1 case</p>
-          </div>
-        </div>
-        <div class="item-re-bus">
-          <div>
-            <img src="https://s.alicdn.com/@sc04/kf/Hd03008657b2a4c71ad1879e5de37ca5dF.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
-          </div>
-          <div class="">
-            <p class="text-truncate-3 my-2">
-              Third party inspection company / Product inspection services quality control inspection in shenzhen
-            </p>
-            <p class="fw-bold m-0">$50.00 - $200.00</p>
-            <p class="m-0">Min. order: 1.0 case</p>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
     <hr>
@@ -765,126 +791,146 @@
       <div class="card-supplier mt-4">
         <div class="scroll-container-business scroll-container-d-none" id="popular">
           <div class="scroll-content">
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/H9d1d9dc334354e19a59b00a51b0b27d3g.png_220x220.png" width="160" height="160" class="rounded-4" alt="">
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/H9d1d9dc334354e19a59b00a51b0b27d3g.png_220x220.png" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    2023 Hot Sale Full Touch Fitness Tracker Watches Calling Sport Smart Watch
+                  </p>
+                  <p class="fw-bold m-0">$3.88 - $8.88</p>
+                  <p class="m-0">Min. order: 2 pieces</p>
+                </div>
               </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  2023 Hot Sale Full Touch Fitness Tracker Watches Calling Sport Smart Watch
-                </p>
-                <p class="fw-bold m-0">$3.88 - $8.88</p>
-                <p class="m-0">Min. order: 2 pieces</p>
+            </a>
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/Hb29e810e7e3b48e38b4691fb0b88ee619.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    2023 Outdoor Smart Watch for Men Waterproof Large Memory Outdoor Sports Smartwatch 380mAh Large Battery
+                  </p>
+                  <p class="fw-bold m-0">$3.88 - $7.88</p>
+                  <p class="m-0">Min. order: 10.0 pieces</p>
+                </div>
               </div>
-            </div>
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/Hb29e810e7e3b48e38b4691fb0b88ee619.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+            </a>
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/H83349eead3c044b8980c9b50b73f1675N.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    Newest Arrival Wireless Smart Watch Large Screen Smart Menu Bt Call Smart Watch Sports Fitness Tracker Smartwatch Alloy Square
+                  </p>
+                  <p class="fw-bold m-0">$3.22 - $8.22</p>
+                  <p class="m-0">Min. order: 2.0 pieces</p>
+                </div>
               </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  2023 Outdoor Smart Watch for Men Waterproof Large Memory Outdoor Sports Smartwatch 380mAh Large Battery
-                </p>
-                <p class="fw-bold m-0">$3.88 - $7.88</p>
-                <p class="m-0">Min. order: 10.0 pieces</p>
+            </a>
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/H16ef3e7cc23d459f9ec89a6d4b351b39j.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    New Design W29 Pro Heart Rate Monitor Blood Pressure Sports Fitness Tracker Smartwatch Tws Wireless Earbuds Smart Watch Earphone
+                  </p>
+                  <p class="fw-bold m-0">$9.90 - $10.20</p>
+                  <p class="m-0">Min. order: 10.0 pieces</p>
+                </div>
               </div>
-            </div>
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/H83349eead3c044b8980c9b50b73f1675N.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+            </a>
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/H48dda96c15184ea1b75c089490862c9e1.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    Tracking Smartwatch Watch Lady Women Smart Watch New Fashion Face Menstrual Period Reminder Elegant Health and Sport Alloy IP68
+                  </p>
+                  <p class="fw-bold m-0">$3.22 - $8.22</p>
+                  <p class="m-0">Min. order: 2.0 pieces</p>
+                </div>
               </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  Newest Arrival Wireless Smart Watch Large Screen Smart Menu Bt Call Smart Watch Sports Fitness Tracker Smartwatch Alloy Square
-                </p>
-                <p class="fw-bold m-0">$3.22 - $8.22</p>
-                <p class="m-0">Min. order: 2.0 pieces</p>
+            </a>
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/Ha3c8e0ad4cef40c5b87c596ec09f44806.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    1688 china shipping agent to Germany France Spain Italy USA DDP amz dropshipping service
+                  </p>
+                  <p class="fw-bold m-0">$0.50 - $1.00</p>
+                  <p class="m-0">Min. order: 50 kilograms</p>
+                </div>
               </div>
-            </div>
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/H16ef3e7cc23d459f9ec89a6d4b351b39j.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+            </a>
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/Hdf495b91573048ed8f48c66fda74cba0i.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    China Goods Quality Factory Inspection Agent amz FBA 3rd Party Product Test Report QC Agent
+                  </p>
+                  <p class="fw-bold m-0">$50.00 - $200.00</p>
+                  <p class="m-0">Min. order: 1.0 case</p>
+                </div>
               </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  New Design W29 Pro Heart Rate Monitor Blood Pressure Sports Fitness Tracker Smartwatch Tws Wireless Earbuds Smart Watch Earphone
-                </p>
-                <p class="fw-bold m-0">$9.90 - $10.20</p>
-                <p class="m-0">Min. order: 10.0 pieces</p>
+            </a>
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/Hf8a14b03720a41f3aa8113ee8a20deeaH.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    Fast door to door agent Air cargo/sea services DDP/DDU shipping china to England Italy Spain Europe usa amz FBA logistics
+                  </p>
+                  <p class="fw-bold m-0">$0.90 - $1.58</p>
+                  <p class="m-0">Min. order: 100 kilograms</p>
+                </div>
               </div>
-            </div>
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/H48dda96c15184ea1b75c089490862c9e1.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+            </a>
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/Hc5ac266c443047f08ed4ccb6a377ad59Q.png_220x220.png" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    Door to door service FCL/LCL sea freight agent shipping company in China Guangzhou Shenzhen to USA FBA amz shipping
+                  </p>
+                  <p class="fw-bold m-0">$0.90 - $1.58</p>
+                  <p class="m-0">Min. order: 100.0 kilograms</p>
+                </div>
               </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  Tracking Smartwatch Watch Lady Women Smart Watch New Fashion Face Menstrual Period Reminder Elegant Health and Sport Alloy IP68
-                </p>
-                <p class="fw-bold m-0">$3.22 - $8.22</p>
-                <p class="m-0">Min. order: 2.0 pieces</p>
+            </a>
+            <a href="./cardDetail.html" class="text-decoration-none text-dark">
+              <div class="item-re-bus ms-0">
+                <div>
+                  <img src="https://s.alicdn.com/@sc04/kf/H81b7ce4d5e664376a49cd95a99c5b343K.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
+                </div>
+                <div>
+                  <p class="text-truncate-3 my-2">
+                    DHL/UPS/ express shipping from Guangdong china to usa/ europe/ other country  freight forwarder
+                  </p>
+                  <p class="fw-bold m-0">$1.00 - $10.00</p>
+                  <p class="m-0">Min. order: 100.0 kilograms</p>
+                </div>
               </div>
-            </div>
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/Ha3c8e0ad4cef40c5b87c596ec09f44806.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
-              </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  1688 china shipping agent to Germany France Spain Italy USA DDP amz dropshipping service
-                </p>
-                <p class="fw-bold m-0">$0.50 - $1.00</p>
-                <p class="m-0">Min. order: 50 kilograms</p>
-              </div>
-            </div>
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/Hdf495b91573048ed8f48c66fda74cba0i.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
-              </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  China Goods Quality Factory Inspection Agent amz FBA 3rd Party Product Test Report QC Agent
-                </p>
-                <p class="fw-bold m-0">$50.00 - $200.00</p>
-                <p class="m-0">Min. order: 1.0 case</p>
-              </div>
-            </div>
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/Hf8a14b03720a41f3aa8113ee8a20deeaH.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
-              </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  Fast door to door agent Air cargo/sea services DDP/DDU shipping china to England Italy Spain Europe usa amz FBA logistics
-                </p>
-                <p class="fw-bold m-0">$0.90 - $1.58</p>
-                <p class="m-0">Min. order: 100 kilograms</p>
-              </div>
-            </div>
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/Hc5ac266c443047f08ed4ccb6a377ad59Q.png_220x220.png" width="160" height="160" class="rounded-4" alt="">
-              </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  Door to door service FCL/LCL sea freight agent shipping company in China Guangzhou Shenzhen to USA FBA amz shipping
-                </p>
-                <p class="fw-bold m-0">$0.90 - $1.58</p>
-                <p class="m-0">Min. order: 100.0 kilograms</p>
-              </div>
-            </div>
-            <div class="item-re-bus ms-0">
-              <div>
-                <img src="https://s.alicdn.com/@sc04/kf/H81b7ce4d5e664376a49cd95a99c5b343K.jpg_220x220.jpg" width="160" height="160" class="rounded-4" alt="">
-              </div>
-              <div>
-                <p class="text-truncate-3 my-2">
-                  DHL/UPS/ express shipping from Guangdong china to usa/ europe/ other country  freight forwarder
-                </p>
-                <p class="fw-bold m-0">$1.00 - $10.00</p>
-                <p class="m-0">Min. order: 100.0 kilograms</p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="preBtn">
@@ -904,6 +950,121 @@
       </div>
     </div>
   </div>
+  <footer class="border-top bg-light py-5 mt-5 text-center text-md-start">
+    <div class="container">
+      <div
+        class="row row-cols-xs-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-xs-center p-1 mb-5"
+      >
+        <div class="p-0">
+          <ul class="list-unstyled">
+            <li class="fw-bold fs-6">Get support</li>
+            <li class="mt-2 hover-underline" role="button">Help Center</li>
+            <li class="mt-2 hover-underline" role="button">Live chat</li>
+            <li class="mt-2 hover-underline" role="button">
+              Checkorder status
+            </li>
+            <li class="mt-2 hover-underline" role="button">Refunds</li>
+            <li class="mt-2 hover-underline" role="button">Report abuse</li>
+          </ul>
+        </div>
+        <div class="p-0">
+          <ul class="list-unstyled">
+            <li class="fw-bold fs-6">Safe and easy payments</li>
+            <li class="mt-2 hover-underline" role="button">
+              Money-back policy
+            </li>
+            <li class="mt-2 hover-underline" role="button">
+              On-time shipping
+            </li>
+            <li class="mt-2 hover-underline" role="button">
+              After-sales protections
+            </li>
+            <li class="mt-2 hover-underline" role="button">
+              Product monitoring services
+            </li>
+            <li class="mt-2 hover-underline" role="button">Report abuse</li>
+          </ul>
+        </div>
+        <div class="p-0">
+          <ul class="list-unstyled">
+            <li class="fw-bold fs-6">Source on Alibaba.com</li>
+            <li class="mt-2 hover-underline" role="button">
+              Request for Quotation
+            </li>
+            <li class="mt-2 hover-underline" role="button">
+              Membership program
+            </li>
+            <li class="mt-2 hover-underline" role="button">
+              Alibaba.com Logistics
+            </li>
+            <li class="mt-2 hover-underline" role="button">
+              Sales tax and VAT
+            </li>
+            <li class="mt-2 hover-underline" role="button">
+              Alibaba.com Reads
+            </li>
+          </ul>
+        </div>
+        <div class="p-0">
+          <ul class="list-unstyled">
+            <li class="fw-bold fs-6">Sell on Alibaba.com</li>
+            <li class="mt-2 hover-underline" role="button">Start selling</li>
+            <li class="mt-2 hover-underline" role="button">Seller Central</li>
+            <li class="mt-2 hover-underline" role="button">
+              Become a Verified Supplier
+            </li>
+            <li class="mt-2 hover-underline" role="button">Partnerships</li>
+            <li class="mt-2 hover-underline" role="button">
+              Download the app for suppliers
+            </li>
+          </ul>
+        </div>
+        <div class="p-0">
+          <ul class="list-unstyled">
+            <li class="fw-bold fs-6">Get to know us</li>
+            <li class="mt-2 hover-underline" role="button">
+              About Alibaba.com
+            </li>
+            <li class="mt-2 hover-underline" role="button">
+              Corporate responsibility
+            </li>
+            <li class="mt-2 hover-underline" role="button">News center</li>
+            <li class="mt-2 hover-underline" role="button">Careers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row row-cols-sm-2  row-cols-1 mt-5">
+        <div class="col p-0 social-icons text-secondary">
+          <i role="button" class="fa-brands fa-square-facebook fs-3"></i>
+          <i role="button" class="fa-brands fa-linkedin fs-3 mx-3"></i>
+          <i role="button" class="fa-brands fa-twitter fs-3"></i>
+          <i role="button" class="fa-brands fa-instagram fs-3 mx-3"></i>
+          <i role="button" class="fa-brands fa-youtube fs-3"></i>
+          <i role="button" class="fa-brands fa-tiktok fs-3 ms-3"></i>
+        </div>
+        <div
+          class="col d-lg-flex align-items-center p-0"
+        >
+          <span class="p-0">Trade on the go with the</span>
+          <b class="p-0 ms-3"
+            ><a href="https://www.alibaba.com" class="text-dark"
+              >Alibaba.com app</a
+            ></b
+          >
+          <div class="link-app d-flex justify-content-center">
+            <a
+              href="https://apps.apple.com/us/app/alibaba-com-b2b-trade-app/id503451073?spm=a271h.11855717.j00nmtnb.3.35fc3103rda7cz"
+              ><img class="ms-3" src="../images/app-store.avif" alt=""
+            /></a>
+            <a
+              href="https://play.google.com/store/apps/details?spm=a271h.11855717.j00nmtnb.4.35fc3103rda7cz&id=com.alibaba.intl.android.apps.poseidon&referrer=pcmaindownload"
+              ><img class="ms-3 h-100" src="../images/play-store.avif" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
