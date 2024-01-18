@@ -458,3 +458,21 @@ body {
   border: none;
 }
 /* ------------------------------------------------------ */
+
+.tab-mftr {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+}
+.tablink-mftr {
+border: none;
+  background: none;
+  padding-bottom: 1rem;
+  font-size: bold;
+}
+.tab-mftr button.active {
+  border-bottom: 2px solid black;
+}
